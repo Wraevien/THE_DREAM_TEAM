@@ -10,12 +10,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.THEDREAMTEAM">
+        android:theme="@style/Theme.TheDreamTeam">
+        <activity
+            android:name=".BrillanteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BiblaniasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BesaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BersabeActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.THEDREAMTEAM">
+            android:theme="@style/Theme.TheDreamTeam">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

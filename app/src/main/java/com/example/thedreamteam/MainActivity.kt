@@ -1,47 +1,30 @@
 package com.example.thedreamteam
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.thedreamteam.ui.theme.THEDREAMTEAMTheme
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            THEDREAMTEAMTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+        setContentView(R.layout.activity_main)
+
+        findViewById<Button>(R.id.btnBersabe).setOnClickListener {
+            startActivity(Intent(this, BersabeActivity::class.java))
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    THEDREAMTEAMTheme {
-        Greeting("Android")
+        findViewById<Button>(R.id.btnBesa).setOnClickListener {
+            startActivity(Intent(this, BesaActivity::class.java))
+        }
+        findViewById<Button>(R.id.btnBiblanias).setOnClickListener {
+            startActivity(Intent(this, BiblaniasActivity::class.java))
+        }
+        findViewById<Button>(R.id.btnBon).setOnClickListener {
+            startActivity(Intent(this, BonActivity::class.java))
+        }
+        findViewById<Button>(R.id.btnBrillante).setOnClickListener {
+            startActivity(Intent(this, BrillanteActivity::class.java))
+        }
     }
 }
