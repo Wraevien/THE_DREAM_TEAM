@@ -9,7 +9,7 @@ import com.google.android.material.appbar.MaterialToolbar
 class BesaActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_biblanias)
+        setContentView(R.layout.activity_besa)
 
 
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)
